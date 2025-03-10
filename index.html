@@ -53,6 +53,12 @@
             font-weight: 700;
             font-size: 1.5rem;
             color: var(--dark);
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .logo:hover {
+            color: var(--primary);
         }
         
         .nav-links {
@@ -402,7 +408,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo">Portfolio</div>
+        <a href="#top" class="logo">Portfolio</a>
         <div class="nav-links">
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
@@ -411,7 +417,7 @@
         </div>
     </nav>
     
-    <header>
+    <header id="top">
         <div class="hero">
             <h1>Lucca</h1>
             <p>Hi! I'm applying to the Apple Maker Academy and put this portfolio together to help showcase my skills and projects.</p>
