@@ -53,12 +53,28 @@
             font-weight: 700;
             font-size: 1.5rem;
             color: var(--dark);
-            cursor: pointer;
+            text-decoration: none;
+            position: relative;
             transition: color 0.3s;
         }
         
         .logo:hover {
             color: var(--primary);
+        }
+        
+        .logo::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+        
+        .logo:hover::after {
+            width: 100%;
         }
         
         .nav-links {
