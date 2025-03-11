@@ -224,7 +224,7 @@
         
         .project-img {
             width: 100%;
-            height: 200px;
+            height: 400px;
             background-color: var(--secondary);
             display: flex;
             align-items: center;
@@ -233,6 +233,20 @@
             font-size: 1.2rem;
         }
         
+        .project-img.model {
+            background-image: url(images/model.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        .project-img.planter {
+            background-image: url(images/planter.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
         .project-info {
             padding: 20px;
         }
@@ -491,7 +505,7 @@
         <h2 class="section-title">Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <div class="project-img">Project Image Placeholder</div>
+                <div class="project-img model"></div>
                 <div class="project-info">
                     <h3>Articulated 3D Printed Hand</h3>
                     <p>Created a 3D modeled and printed hand. Currently experimenting with Arduino to make it fully mechanical and remotely controlled.</p>
@@ -516,7 +530,7 @@
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img">Project Image Placeholder</div>
+                <div class="project-img planter"></div>
                 <div class="project-info">
                     <h3>Planter Box</h3>
                     <p>Designed a planter box for a gardening project. Worked with my father to cut the wood, sand it, provide a layer of varnish, and assemble.</p>
@@ -538,7 +552,7 @@
                 <p>I'm a passionate high school sophomore interested in learning how to create innovative, and user-friendly experiences. Currently pursuing various advanced courses in programming, math, and French.</p>
                 <p>My deep interest in technology and design began when I was younger, and I've since dedicated myself to expanding my knowledge across various domains, from Python to graphic design. I'm particularly drawn to Apple for its emphasis on design excellence and seamless user experiences.</p>
                 <p>Outside of design, I enjoy sketching, reading fiction novels, and playing video games. These creative outlets influence my approach to problem-solving and design thinking.</p>
-                <a href="#" class="cta-button">Download Resume</a>
+                <!-- <a href="#" class="cta-button">Download Resume</a> -->
             </div>
         </div>
     </section>
