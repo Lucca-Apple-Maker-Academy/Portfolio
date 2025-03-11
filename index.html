@@ -425,7 +425,7 @@
         function updateLinkUrl() {
             var link = document.getElementById('send_email');
             var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
+            var email = 'lucca.lazzaro+apple@gmail.com';
             var message = document.getElementById('message').value;
             var subject = "Hello!";
             var href = "mailto:" + email + "?subject=" + subject + "&body=" + message;
@@ -547,10 +547,10 @@
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Your Name" onKeyUp="updateLinkUrl()">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Your Email" onKeyUp="updateLinkUrl()">
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="message" placeholder="Your Message" onKeyUp="updateLinkUrl()"></textarea>
@@ -561,11 +561,11 @@
         </div>
     </section>
     
-    <footer>
+    <!-- <footer>
         <div class="social-links">
             <a href="https://github.com/Lucca-Apple-Maker-Academy/Portfolio" class="social-link">GH</a>
         </div>
         <p>&copy; 2025 Lucca. All Rights Reserved.</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
